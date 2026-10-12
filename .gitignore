@@ -1,0 +1,14 @@
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Node（如果后面加了构建工具）
+node_modules/
+dist/
+.cache/
+
+# 日志
+*.log

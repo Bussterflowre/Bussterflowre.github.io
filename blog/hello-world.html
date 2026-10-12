@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>你好，世界 · 博客</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">YN.</a>
+      <nav class="nav-links">
+        <a href="../index.html#about">关于</a>
+        <a href="../index.html#projects">项目</a>
+        <a href="index.html">博客</a>
+        <a href="../index.html#timeline">经历</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="post-page">
+      <h1>你好，世界 · 我的第一篇博客</h1>
+      <div class="post-meta">2026-10-12 · 约 1 分钟阅读</div>
+
+      <div class="post-content">
+        <p>
+          这是一篇示例文章，用来展示博客页的排版效果。你可以直接把 <code>blog/hello-world.html</code>
+          复制一份，重命名成 <code>blog/2026-10-15-我的新文章.html</code>，然后改标题、日期和正文就行。
+        </p>
+
+        <h2>二级标题</h2>
+        <p>
+          正文段落示例。建议每段控制在 3-5 行以内，太长读起来累。
+          中英文之间加一个空格，看起来更舒服。
+        </p>
+
+        <h3>三级标题</h3>
+        <ul>
+          <li>无序列表项一</li>
+          <li>无序列表项二</li>
+          <li>无序列表项三</li>
+        </ul>
+
+        <h2>代码示例</h2>
+        <p>行内代码：<code>const hello = "world";</code></p>
+        <pre><code>// 代码块
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+console.log(greet("world"));</code></pre>
+
+        <h2>引用</h2>
+        <blockquote>
+          引用块适合放金句、注释、或者需要视觉上区分开的一段话。
+        </blockquote>
+
+        <h2>链接和图片</h2>
+        <p>
+          外部链接：<a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages 官方文档 ↗</a>
+        </p>
+        <p>
+          图片直接放在 <code>assets/</code> 目录下，用相对路径引用即可。
+        </p>
+      </div>
+
+      <a href="index.html" class="post-back">← 返回博客列表</a>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> 你的名字</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

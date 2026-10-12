@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>你的名字 · 个人主页</title>
+  <meta name="description" content="个人主页 - 自我介绍、项目作品、博客文章与经历" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo">YN.</a>
+      <nav class="nav-links">
+        <a href="#about">关于</a>
+        <a href="#projects">项目</a>
+        <a href="#blog">博客</a>
+        <a href="#timeline">经历</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+
+    <!-- ========== 1. 自我介绍 ========== -->
+    <section class="hero" id="about">
+      <div class="hero-avatar">
+        <!-- 替换成你自己的头像：把 assets/avatar.svg 换成 avatar.jpg 即可 -->
+        <img src="assets/avatar.svg" alt="头像" />
+      </div>
+      <h1 class="hero-name">你的名字</h1>
+      <p class="hero-tagline">一句话简介 · 例如「AI 学习者 / 全栈爱好者 / 记录成长中」</p>
+      <p class="hero-bio">
+        这里写一段更长的自我介绍。可以聊聊你在做什么、关注什么、想成为什么样的人。
+        建议控制在 3-5 行以内，太多会让访客失去耐心。
+      </p>
+      <div class="hero-links">
+        <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:you@example.com">Email</a>
+        <a href="https://twitter.com/your-username" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://www.zhihu.com/people/your-username" target="_blank" rel="noopener">知乎</a>
+        <a href="assets/resume.pdf" target="_blank">简历</a>
+      </div>
+    </section>
+
+    <!-- ========== 2. 项目 / 作品展示 ========== -->
+    <section class="section" id="projects">
+      <h2 class="section-title">项目 / 作品</h2>
+      <p class="section-desc">挑几个你最想展示的作品，其他可以通过外链跳转。</p>
+
+      <div class="project-grid">
+        <!-- 项目卡片模板：复制这一块即可新增 -->
+        <article class="card">
+          <div class="card-header">
+            <h3 class="card-title">项目名称一</h3>
+            <span class="card-year">2026</span>
+          </div>
+          <p class="card-desc">
+            项目一句话说明：它是什么、解决了什么问题、你负责了哪部分。
+          </p>
+          <div class="card-tags">
+            <span class="tag">Python</span>
+            <span class="tag">React</span>
+            <span class="tag">Supabase</span>
+          </div>
+          <div class="card-links">
+            <a href="https://your-demo-link.com" target="_blank" rel="noopener">在线预览 ↗</a>
+            <a href="https://github.com/your-username/repo" target="_blank" rel="noopener">源代码 ↗</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h3 class="card-title">项目名称二</h3>
+            <span class="card-year">2025</span>
+          </div>
+          <p class="card-desc">
+            这里是第二个项目的描述。可以放你参加过的比赛、做过的课程作业、开源贡献等。
+          </p>
+          <div class="card-tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">Node.js</span>
+          </div>
+          <div class="card-links">
+            <a href="#" target="_blank" rel="noopener">查看详情 ↗</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h3 class="card-title">项目名称三</h3>
+            <span class="card-year">2025</span>
+          </div>
+          <p class="card-desc">
+            第三个项目的描述。建议按重要性/时间排序，把最想让人看到的放前面。
+          </p>
+          <div class="card-tags">
+            <span class="tag">Figma</span>
+            <span class="tag">UI Design</span>
+          </div>
+          <div class="card-links">
+            <a href="#" target="_blank" rel="noopener">查看详情 ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== 3. 博客文章 ========== -->
+    <section class="section" id="blog">
+      <h2 class="section-title">博客</h2>
+      <p class="section-desc">记录学习笔记、技术思考、生活随笔。<a href="blog/index.html">查看全部 →</a></p>
+
+      <ul class="post-list">
+        <!-- 文章条目模板：复制这一行即可新增 -->
+        <li class="post-item">
+          <a href="blog/hello-world.html">
+            <span class="post-date">2026-10-12</span>
+            <span class="post-title">你好，世界 · 我的第一篇博客</span>
+          </a>
+        </li>
+        <li class="post-item">
+          <a href="#">
+            <span class="post-date">2026-10-01</span>
+            <span class="post-title">示例文章标题（点击后跳转到 blog/xxx.html）</span>
+          </a>
+        </li>
+        <li class="post-item">
+          <a href="#">
+            <span class="post-date">2026-09-20</span>
+            <span class="post-title">另一篇示例文章标题</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ========== 4. 简历 / 经历时间线 ========== -->
+    <section class="section" id="timeline">
+      <h2 class="section-title">经历</h2>
+
+      <ol class="timeline">
+        <!-- 时间线条目模板 -->
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>公司名 / 学校名</h3>
+              <span class="timeline-period">2024.07 - 至今</span>
+            </div>
+            <p class="timeline-role">职位 / 专业 · 例如「算法工程师」或「人工智能 本科」</p>
+            <p class="timeline-desc">
+              在这里写一到两句你在这个阶段做了什么、学到了什么、有哪些代表性成果。
+            </p>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>XX 大学</h3>
+              <span class="timeline-period">2020.09 - 2024.06</span>
+            </div>
+            <p class="timeline-role">本科 · 人工智能</p>
+            <p class="timeline-desc">
+              主修课程 / 参与项目 / 获奖情况的简要说明。
+            </p>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>更早的经历</h3>
+              <span class="timeline-period">20XX - 20XX</span>
+            </div>
+            <p class="timeline-role">角色 / 身份</p>
+            <p class="timeline-desc">简要说明。</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> 你的名字 · 由 <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> 托管</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
