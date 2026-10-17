@@ -18,7 +18,13 @@
       "nav.blog": "Blog",
 
       "hero.name": "Orion Zhang",
-      "hero.tagline": "Algorithm Engineer · Multi-Robot Fleet Scheduling × NLP · Beijing",
+      "side.role": "Algorithm Engineer",
+      "side.org": "ForwardX Robotics",
+      "side.loc": "Beijing, China",
+      "side.mail.gmail": "Gmail",
+      "side.mail.qq": "QQ",
+      "side.mail.163": "163",
+      "side.mail.work": "Work",
       "hero.bio1":
         "Hi! I am Orion Zhang, currently an algorithm &amp; Golang engineer at ForwardX Robotics (Beijing), building multi-robot fleet scheduling systems for warehouse logistics. I received my bachelor's degree in Artificial Intelligence from Soochow University.",
       "hero.bio2":
@@ -140,7 +146,13 @@
       "nav.blog": "随笔",
 
       "hero.name": "张宇",
-      "hero.tagline": "算法工程师 · 机器人集群调度 × 自然语言处理 · 北京",
+      "side.role": "算法工程师",
+      "side.org": "北京灵动科技（ForwardX Robotics）",
+      "side.loc": "中国 · 北京",
+      "side.mail.gmail": "Gmail",
+      "side.mail.qq": "QQ",
+      "side.mail.163": "163",
+      "side.mail.work": "工作邮箱",
       "hero.bio1":
         "Hi! 我是张宇，目前在北京灵动科技（ForwardX Robotics）担任算法与 Golang 开发工程师，从事仓储物流多机器人集群调度系统的研发。我本科毕业于苏州大学人工智能专业。",
       "hero.bio2":
