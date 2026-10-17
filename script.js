@@ -58,7 +58,8 @@
         "My next step: bringing large-model reasoning into embodied systems — LLM-based task planning and decision-making for robot fleets, vision-language-action (VLA) models, and sim-to-real evaluation. This is where I am investing my time now, and I would love to go further in this direction.",
       "pub.title": "Papers &amp; Patents",
       "pub.p1.title": "A Four-Way Shuttle and Its Operating Method",
-      "pub.p1.meta": "Wang Lei, Shi Xianliang, Wang Peng, <strong>Orion Zhang</strong>, Xue Ye · Chinese Invention Patent Application CN121516438A · filed 2025.11.28, published 2026.02.13",
+      "pub.p1.meta": "Wang Lei, Shi Xianliang, Wang Peng, <strong>Orion Zhang</strong>, Xue Ye · Chinese Invention Patent Application",
+      "pub.p1.date": "filed 2025.11.28, published 2026.02.13",
 
       "projects.title": "Selected Projects",
       "projects.desc": "Things I put a lot of heart into and that best represent me, in reverse chronological order.",
@@ -193,7 +194,8 @@
         "希望把大模型的推理能力带进具身系统：面向机器人集群的 LLM 任务规划与决策、视觉-语言-动作模型（VLA），以及仿真到真实的迁移评估。这是我正在补课与投入的方向，也期待在这一方向上继续深造。",
       "pub.title": "论文 / 专利",
       "pub.p1.title": "一种四向穿梭车及其使用方法",
-      "pub.p1.meta": "王磊、史显良、王鹏、<strong>张宇</strong>、薛烨 · 中国发明专利申请（公开号 CN121516438A）· 2025.11.28 申请，2026.02.13 公开",
+      "pub.p1.meta": "王磊、史显良、王鹏、<strong>张宇</strong>、薛烨 · 中国发明专利申请",
+      "pub.p1.date": "2025.11.28 申请，2026.02.13 公开",
 
       "projects.title": "做过的事",
       "projects.desc": "几件我投入过很多心血、也最能代表我的东西，按时间倒序排列。",

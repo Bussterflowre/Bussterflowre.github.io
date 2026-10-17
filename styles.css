@@ -580,6 +580,21 @@ img {
   font-weight: 600;
 }
 
+.pub-link {
+  color: var(--fg);
+  border-bottom: 1px solid var(--border-strong);
+  white-space: nowrap;
+}
+
+.pub-link:hover {
+  border-bottom-color: var(--fg);
+}
+
+.pub-sep {
+  color: var(--fg-subtle);
+  margin: 0 6px;
+}
+
 /* ---------- 板块标题符号 ---------- */
 .section-title .symbol {
   display: inline-block;
