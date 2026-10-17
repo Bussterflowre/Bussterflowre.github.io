@@ -489,6 +489,24 @@ img {
   margin: 0;
 }
 
+/* 公司名带官网链接 */
+.org-link {
+  color: inherit;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.org-link:hover {
+  border-bottom-color: var(--fg);
+}
+
+.org-link::after {
+  content: "↗";
+  font-size: 0.82em;
+  color: var(--fg-subtle);
+  margin-left: 4px;
+}
+
 .timeline-period {
   font-size: 13px;
   color: var(--fg-subtle);

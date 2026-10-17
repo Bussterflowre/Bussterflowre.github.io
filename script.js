@@ -110,7 +110,7 @@
       "tl1.role": "Algorithm &amp; Golang Engineer",
       "tl1.desc":
         "Working on the fleet scheduling system for warehouse-logistics AMRs: traffic control, task scheduling and order-optimization algorithms, plus the on-robot edge agent and multi-chassis adaptation.",
-      "tl2.org": "Suzhou Aotelai Logistics Technology Co., Ltd.",
+      "tl2.org": "Suzhou Aotelai Logistics Technology Co., Ltd. (ATL)",
       "tl2.role": "Algorithm / Software Engineer · Software Center",
       "tl2.desc":
         "Built an in-house multi-agent warehouse scheduler (RCS) from zero: a highly compatible scheduling kernel supporting our own and mainstream four-way shuttles, with CBS/SIPP path finding and Hungarian matching at its core; integrated WMS/WCS into a reusable, configurable standardized product that accelerated delivery.",
