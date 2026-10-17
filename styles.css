@@ -567,11 +567,17 @@ img {
 .pub-title {
   font-size: 14px;
   color: var(--fg);
+  font-weight: 500;
 }
 
 .pub-meta {
   font-size: 13px;
   color: var(--fg-subtle);
+}
+
+.pub-meta strong {
+  color: var(--fg);
+  font-weight: 600;
 }
 
 /* ---------- 板块标题符号 ---------- */

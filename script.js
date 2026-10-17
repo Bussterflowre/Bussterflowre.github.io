@@ -9,6 +9,7 @@
   const I18N = {
     en: {
       "title": "Orion Zhang · Homepage",
+      "nav.logo": "Orion Zhang",
       "nav.about": "About",
       "nav.news": "News",
       "nav.research": "Research",
@@ -28,17 +29,18 @@
       "hero.bio1":
         "Hi! I am Orion Zhang, currently an algorithm &amp; Golang engineer at ForwardX Robotics (Beijing), building multi-robot fleet scheduling systems for warehouse logistics. I received my bachelor's degree in Artificial Intelligence from Soochow University.",
       "hero.bio2":
-        "My interests center on multi-agent systems: multi-agent path finding (MAPF), task allocation and traffic coordination; I also keep a long-standing interest in natural language processing, especially conversational emotion recognition and knowledge graphs.",
+        "My interests center on multi-agent systems (MAPF, task allocation, traffic coordination) and natural language processing. Looking ahead, I'm moving toward large language models and embodied AI — bringing LLM-based reasoning into real-world robot fleets.",
 
       "news.title": "News",
       "news.i1": "Joined ForwardX Robotics, working on fleet scheduling systems for warehouse-logistics AMRs.",
+      "news.i0": "Our invention patent application \"A Four-Way Shuttle and Its Operating Method\" was published (CN121516438A), with me as a co-inventor.",
       "news.i2": "Our in-house RCS went live in multiple automated-warehouse projects — from zero to a productized scheduler.",
       "news.i3": "Built the multi-shuttle concurrent scheduling system at Suzhou Mocang Robotics.",
       "news.i4": "Graduated from Soochow University with a B.Eng. in Artificial Intelligence.",
 
       "research.title": "What I Work On",
       "research.desc":
-        "I care about two core questions: <strong>how to make a fleet of agents coordinate efficiently and safely in the real physical world</strong>, and <strong>how to make machines understand the emotions and semantics in human language</strong>. One leans engineering, the other academic — both fascinate me.",
+        "I care about three questions: <strong>how a fleet of agents can coordinate efficiently and safely in the physical world</strong>, <strong>how machines understand the emotions and semantics in human language</strong>, and <strong>how LLM-based agents can reason and act in the real world</strong>. The first two are what I have built; the third is where I am heading.",
       "res.a.title": "Multi-Agent Systems &amp; Fleet Scheduling",
       "res.a.desc":
         "Scheduling for warehouse-logistics robot fleets: multi-agent path finding (MAPF) built on CBS conflict-based search and SIPP space-time reservation, optimal task–vehicle matching via the Hungarian algorithm, deadlock avoidance via Banker's algorithm, plus order-level combinatorial optimization (GBDT ETA estimation, bin packing, clustering). These algorithms run at scale on heterogeneous fleets (AMRs / four-way shuttles). I'd like to further explore multi-agent reinforcement learning (MARL) under real-world constraints.",
@@ -51,7 +53,12 @@
       "res.d.title": "Knowledge Graphs &amp; Information Extraction",
       "res.d.desc":
         "Built a COVID biomedical knowledge graph: named entity recognition, rule-based relation extraction, and the full pipeline from literature collection to graph construction. Interested in domain-specific knowledge engineering and KGQA.",
-      "pub.title": "Publications",
+      "res.e.title": "Looking Ahead: LLM &amp; Embodied AI",
+      "res.e.desc":
+        "My next step: bringing large-model reasoning into embodied systems — LLM-based task planning and decision-making for robot fleets, vision-language-action (VLA) models, and sim-to-real evaluation. This is where I am investing my time now, and I would love to go further in this direction.",
+      "pub.title": "Papers &amp; Patents",
+      "pub.p1.title": "A Four-Way Shuttle and Its Operating Method",
+      "pub.p1.meta": "Wang Lei, Shi Xianliang, Wang Peng, <strong>Orion Zhang</strong>, Xue Ye · Chinese Invention Patent Application CN121516438A · filed 2025.11.28, published 2026.02.13",
 
       "projects.title": "Selected Projects",
       "projects.desc": "Things I put a lot of heart into and that best represent me, in reverse chronological order.",
@@ -137,6 +144,7 @@
 
     zh: {
       "title": "张宇 · 个人主页",
+      "nav.logo": "张宇",
       "nav.about": "关于",
       "nav.news": "近况",
       "nav.research": "研究",
@@ -156,17 +164,18 @@
       "hero.bio1":
         "Hi! 我是张宇，目前在北京灵动科技（ForwardX Robotics）担任算法与 Golang 开发工程师，从事仓储物流多机器人集群调度系统的研发。我本科毕业于苏州大学人工智能专业。",
       "hero.bio2":
-        "我的兴趣聚焦于多智能体系统：多智能体路径规划（MAPF）、任务分配与交通管控；同时也长期关注自然语言处理，尤其是对话情绪识别与知识图谱。",
+        "我的兴趣横跨多智能体系统（多智能体路径规划、任务分配与交通管控）与自然语言处理。着眼未来，我希望深入大语言模型与具身智能，把基于大模型的推理与决策带进真实的机器人集群。",
 
       "news.title": "近况",
       "news.i1": "入职北京灵动科技（ForwardX Robotics），参与仓储物流 AMR 集群调度系统的研发。",
+      "news.i0": "参与发明的专利申请《一种四向穿梭车及其使用方法》公开（CN121516438A）。",
       "news.i2": "自研 RCS 推动多个立体库项目软件落地，完成从 0 到 1 的产品化。",
       "news.i3": "在苏州魔仓机器人参与多辆四向车并发调度的智能调度系统研发。",
       "news.i4": "从苏州大学人工智能专业毕业，结束四年本科时光。",
 
       "research.title": "我在研究什么",
       "research.desc":
-        "我关注两个核心问题：<strong>如何让一群智能体在真实物理环境中高效、安全地协同工作</strong>，以及<strong>如何让机器读懂人类语言里的情感与语义</strong>。它们一个偏工程、一个偏学术，但都让我着迷。",
+        "我关注三个问题：<strong>一群智能体如何在真实物理环境中高效、安全地协同</strong>，<strong>机器如何读懂语言中的情感与语义</strong>，以及<strong>基于大模型的智能体如何在真实世界中推理与行动</strong>。前两个是我已经做过的，第三个是我正在走向的方向。",
       "res.a.title": "多智能体系统与集群调度",
       "res.a.desc":
         "面向仓储物流场景的多机器人集群调度：以 CBS 冲突搜索与 SIPP 时空预约为核心的多智能体路径规划（MAPF）、匈牙利算法任务-车辆最优匹配、银行家算法死锁避免，以及 GBDT 到达时间预估、装箱与聚类等订单组合优化；算法在异构机器人集群（AMR / 四向穿梭车）上规模化落地。希望进一步探索多智能体强化学习（MARL）在真实约束下的应用。",
@@ -179,7 +188,12 @@
       "res.d.title": "知识图谱与信息抽取",
       "res.d.desc":
         "完成新冠生物医学知识图谱的构建：命名实体识别、基于规则的关系抽取、从文献采集到图谱落地的完整流程。关注垂直领域知识工程与图谱问答方向。",
-      "pub.title": "论文 / 成果",
+      "res.e.title": "下一站：大模型与具身智能",
+      "res.e.desc":
+        "希望把大模型的推理能力带进具身系统：面向机器人集群的 LLM 任务规划与决策、视觉-语言-动作模型（VLA），以及仿真到真实的迁移评估。这是我正在补课与投入的方向，也期待在这一方向上继续深造。",
+      "pub.title": "论文 / 专利",
+      "pub.p1.title": "一种四向穿梭车及其使用方法",
+      "pub.p1.meta": "王磊、史显良、王鹏、<strong>张宇</strong>、薛烨 · 中国发明专利申请（公开号 CN121516438A）· 2025.11.28 申请，2026.02.13 公开",
 
       "projects.title": "做过的事",
       "projects.desc": "几件我投入过很多心血、也最能代表我的东西，按时间倒序排列。",

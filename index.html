@@ -12,7 +12,7 @@
   <!-- 顶部导航 -->
   <header class="nav">
     <div class="nav-inner">
-      <a href="#top" class="nav-logo">OZ.</a>
+      <a href="#top" class="nav-logo" data-i18n="nav.logo">Orion Zhang</a>
       <nav class="nav-links">
         <a href="#about" data-i18n="nav.about">About</a>
         <a href="#news" data-i18n="nav.news">News</a>
@@ -79,9 +79,9 @@
             I received my bachelor's degree in Artificial Intelligence from Soochow University.
           </p>
           <p class="hero-bio" data-i18n="hero.bio2">
-            My interests center on multi-agent systems: multi-agent path finding (MAPF),
-            task allocation and traffic coordination; I also keep a long-standing interest in
-            natural language processing, especially conversational emotion recognition and knowledge graphs.
+            My interests center on multi-agent systems (MAPF, task allocation, traffic coordination)
+            and natural language processing. Looking ahead, I'm moving toward large language models
+            and embodied AI — bringing LLM-based reasoning into real-world robot fleets.
           </p>
         </div>
 
@@ -93,6 +93,10 @@
         <li class="news-item">
           <span class="news-date">2026.03</span>
           <span class="news-text" data-i18n="news.i1">Joined ForwardX Robotics, working on fleet scheduling systems for warehouse-logistics AMRs.</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">2026.02</span>
+          <span class="news-text" data-i18n="news.i0">Our invention patent application "A Four-Way Shuttle and Its Operating Method" was published (CN121516438A), with me as a co-inventor.</span>
         </li>
         <li class="news-item">
           <span class="news-date">2025</span>
@@ -113,10 +117,11 @@
     <section class="section" id="research">
       <h2 class="section-title"><span class="symbol">✦</span> <span data-i18n="research.title">What I Work On</span></h2>
       <p class="section-desc" data-i18n="research.desc">
-        I care about two core questions:
-        <strong>how to make a fleet of agents coordinate efficiently and safely in the real physical world</strong>,
-        and <strong>how to make machines understand the emotions and semantics in human language</strong>.
-        One leans engineering, the other academic — both fascinate me.
+        I care about three questions:
+        <strong>how a fleet of agents can coordinate efficiently and safely in the physical world</strong>,
+        <strong>how machines understand the emotions and semantics in human language</strong>,
+        and <strong>how LLM-based agents can reason and act in the real world</strong>.
+        The first two are what I have built; the third is where I am heading.
       </p>
 
       <div class="interest-grid">
@@ -159,17 +164,26 @@
             Interested in domain-specific knowledge engineering and KGQA.
           </p>
         </article>
+
+        <article class="interest-item">
+          <h3 data-i18n="res.e.title">Looking Ahead: LLM &amp; Embodied AI</h3>
+          <p data-i18n="res.e.desc">
+            My next step: bringing large-model reasoning into embodied systems — LLM-based task
+            planning and decision-making for robot fleets, vision-language-action (VLA) models,
+            and sim-to-real evaluation. This is where I am investing my time now, and I would
+            love to go further in this direction.
+          </p>
+        </article>
       </div>
 
-      <!-- 如有论文、专利或竞赛成果，按此模板补充：
-      <h3 class="sub-title"><span data-i18n="pub.title">Publications</span></h3>
+      <h3 class="sub-title" data-i18n="pub.title">Papers &amp; Patents</h3>
       <ul class="pub-list">
+        <!-- 论文/专利条目模板：复制一个 <li> 即可新增 -->
         <li>
-          <span class="pub-title">Paper title</span>
-          <span class="pub-meta">Authors · Venue · Year</span>
+          <span class="pub-title" data-i18n="pub.p1.title">A Four-Way Shuttle and Its Operating Method</span>
+          <span class="pub-meta" data-i18n="pub.p1.meta">Wang Lei, Shi Xianliang, Wang Peng, <strong>Orion Zhang</strong>, Xue Ye · Chinese Invention Patent Application CN121516438A · filed 2025.11.28, published 2026.02.13</span>
         </li>
       </ul>
-      -->
     </section>
 
     <!-- ========== 3. 项目 ========== -->
