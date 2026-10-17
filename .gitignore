@@ -8,6 +8,9 @@ Thumbs.db
 # AI 助手本地数据
 .codebuddy/
 
+# GitHub Profile 仓库（独立 git 仓库，不属于本站点）
+profile/
+
 # Node（如果后面加了构建工具）
 node_modules/
 dist/
