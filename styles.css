@@ -136,6 +136,24 @@ img {
   border-color: var(--border-strong);
 }
 
+.lang-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--fg-muted);
+  height: 30px;
+  padding: 0 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.lang-toggle:hover {
+  color: var(--fg);
+  border-color: var(--border-strong);
+}
+
 /* ---------- Hero 区 ---------- */
 .hero {
   padding: 72px 0 56px;
@@ -174,8 +192,12 @@ img {
 .hero-bio {
   font-size: 16px;
   color: var(--fg);
-  margin: 0 0 24px;
+  margin: 0 0 16px;
   max-width: 60ch;
+}
+
+.hero-bio + .hero-bio {
+  margin-bottom: 28px;
 }
 
 .hero-links {
@@ -418,6 +440,175 @@ img {
   line-height: 1.65;
 }
 
+/* ---------- 研究方向板块 ---------- */
+.interest-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.interest-item {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 18px 20px;
+  transition: border-color 0.15s ease;
+}
+
+.interest-item:hover {
+  border-color: var(--border-strong);
+}
+
+.interest-item h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.interest-item p {
+  font-size: 14px;
+  color: var(--fg-muted);
+  margin: 0;
+  line-height: 1.7;
+}
+
+.sub-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 32px 0 12px;
+}
+
+/* 论文列表 */
+.pub-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pub-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pub-list li:last-child {
+  border-bottom: none;
+}
+
+.pub-title {
+  font-size: 14px;
+  color: var(--fg);
+}
+
+.pub-meta {
+  font-size: 13px;
+  color: var(--fg-subtle);
+}
+
+/* ---------- 板块标题符号 ---------- */
+.section-title .symbol {
+  display: inline-block;
+  width: 1.4em;
+  font-weight: 400;
+  color: var(--fg-subtle);
+}
+
+/* ---------- 近况列表 ---------- */
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-item {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-date {
+  font-size: 13px;
+  color: var(--fg-subtle);
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+  width: 72px;
+  font-weight: 600;
+}
+
+.news-text {
+  font-size: 14px;
+  color: var(--fg);
+  flex: 1;
+}
+
+/* ---------- 工具箱 ---------- */
+.toolbox {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.tb-row {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.tb-cat {
+  font-size: 13px;
+  color: var(--fg-subtle);
+  flex-shrink: 0;
+  width: 5.5em;
+}
+
+.tb-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex: 1;
+}
+
+/* ---------- 荣誉奖项板块 ---------- */
+.award-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.award-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.award-item:last-child {
+  border-bottom: none;
+}
+
+.award-name {
+  font-size: 14px;
+  color: var(--fg);
+}
+
+.award-meta {
+  font-size: 13px;
+  color: var(--fg-subtle);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
 /* ---------- 页脚 ---------- */
 .footer {
   border-top: 1px solid var(--border);
@@ -514,8 +705,10 @@ img {
 /* ---------- 响应式 ---------- */
 @media (max-width: 600px) {
   .nav-links {
-    gap: 14px;
+    gap: 10px 14px;
     font-size: 13px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .hero {
@@ -547,5 +740,23 @@ img {
   .timeline-header {
     flex-direction: column;
     gap: 2px;
+  }
+
+  .news-item {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .news-date {
+    width: auto;
+  }
+
+  .tb-row {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .tb-cat {
+    width: auto;
   }
 }

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>你的名字 · 个人主页</title>
-  <meta name="description" content="个人主页 - 自我介绍、项目作品、博客文章与经历" />
+  <title>Orion Zhang · Homepage</title>
+  <meta name="description" content="Orion Zhang - Algorithm engineer focusing on multi-agent path finding and robot fleet scheduling (MAPF / CBS / SIPP), with interests in NLP" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 </head>
@@ -12,13 +12,17 @@
   <!-- 顶部导航 -->
   <header class="nav">
     <div class="nav-inner">
-      <a href="#top" class="nav-logo">YN.</a>
+      <a href="#top" class="nav-logo">OZ.</a>
       <nav class="nav-links">
-        <a href="#about">关于</a>
-        <a href="#projects">项目</a>
-        <a href="#blog">博客</a>
-        <a href="#timeline">经历</a>
-        <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">◐</button>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#news" data-i18n="nav.news">News</a>
+        <a href="#research" data-i18n="nav.research">Research</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#toolbox" data-i18n="nav.toolbox">Toolbox</a>
+        <a href="#timeline" data-i18n="nav.timeline">Experience</a>
+        <a href="#blog" data-i18n="nav.blog">Blog</a>
+        <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">中文</button>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">◐</button>
       </nav>
     </div>
   </header>
@@ -28,117 +32,286 @@
     <!-- ========== 1. 自我介绍 ========== -->
     <section class="hero" id="about">
       <div class="hero-avatar">
-        <!-- 替换成你自己的头像：把 assets/avatar.svg 换成 avatar.jpg 即可 -->
-        <img src="assets/avatar.svg" alt="头像" />
+        <!-- 替换成真实头像时：把图片放到 assets/ 下并修改 src 即可 -->
+        <img src="assets/avatar.jpg" alt="Portrait of Orion Zhang" />
       </div>
-      <h1 class="hero-name">你的名字</h1>
-      <p class="hero-tagline">一句话简介 · 例如「AI 学习者 / 全栈爱好者 / 记录成长中」</p>
-      <p class="hero-bio">
-        这里写一段更长的自我介绍。可以聊聊你在做什么、关注什么、想成为什么样的人。
-        建议控制在 3-5 行以内，太多会让访客失去耐心。
+      <h1 class="hero-name" data-i18n="hero.name">Orion Zhang</h1>
+      <p class="hero-tagline" data-i18n="hero.tagline">Algorithm Engineer · Multi-Robot Fleet Scheduling × NLP · Beijing</p>
+      <p class="hero-bio" data-i18n="hero.bio1">
+        Hi! I am Orion Zhang, currently an algorithm &amp; Golang engineer at ForwardX Robotics (Beijing),
+        building multi-robot fleet scheduling systems for warehouse logistics.
+        I received my bachelor's degree in Artificial Intelligence from Soochow University.
+      </p>
+      <p class="hero-bio" data-i18n="hero.bio2">
+        My interests center on multi-agent systems: multi-agent path finding (MAPF),
+        task allocation and traffic coordination; I also keep a long-standing interest in
+        natural language processing, especially conversational emotion recognition and knowledge graphs.
       </p>
       <div class="hero-links">
-        <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
-        <a href="mailto:you@example.com">Email</a>
-        <a href="https://twitter.com/your-username" target="_blank" rel="noopener">Twitter</a>
-        <a href="https://www.zhihu.com/people/your-username" target="_blank" rel="noopener">知乎</a>
-        <a href="assets/resume.pdf" target="_blank">简历</a>
+        <a href="https://github.com/Bussterflowre" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:1342329788@qq.com">Email</a>
+        <!-- 如有简历 PDF，放入 assets/ 后取消注释：
+        <a href="assets/resume.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+        -->
       </div>
     </section>
 
-    <!-- ========== 2. 项目 / 作品展示 ========== -->
+    <!-- ========== 1.5 近况 ========== -->
+    <section class="section" id="news">
+      <h2 class="section-title"><span class="symbol">◆</span> <span data-i18n="news.title">News</span></h2>
+      <ul class="news-list">
+        <!-- 近况条目模板：复制这一行即可新增，新的事放最上面 -->
+        <li class="news-item">
+          <span class="news-date">2026.03</span>
+          <span class="news-text" data-i18n="news.i1">Joined ForwardX Robotics, working on fleet scheduling systems for warehouse-logistics AMRs.</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">2025</span>
+          <span class="news-text" data-i18n="news.i2">Our in-house RCS went live in multiple automated-warehouse projects — from zero to a productized scheduler.</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">2024.07</span>
+          <span class="news-text" data-i18n="news.i3">Built the multi-shuttle concurrent scheduling system at Suzhou Mocang Robotics.</span>
+        </li>
+        <li class="news-item">
+          <span class="news-date">2024.06</span>
+          <span class="news-text" data-i18n="news.i4">Graduated from Soochow University with a B.Eng. in Artificial Intelligence.</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ========== 2. 研究方向 ========== -->
+    <section class="section" id="research">
+      <h2 class="section-title"><span class="symbol">✦</span> <span data-i18n="research.title">What I Work On</span></h2>
+      <p class="section-desc" data-i18n="research.desc">
+        I care about two core questions:
+        <strong>how to make a fleet of agents coordinate efficiently and safely in the real physical world</strong>,
+        and <strong>how to make machines understand the emotions and semantics in human language</strong>.
+        One leans engineering, the other academic — both fascinate me.
+      </p>
+
+      <div class="interest-grid">
+        <article class="interest-item">
+          <h3 data-i18n="res.a.title">Multi-Agent Systems &amp; Fleet Scheduling</h3>
+          <p data-i18n="res.a.desc">
+            Scheduling for warehouse-logistics robot fleets: multi-agent path finding (MAPF) built on
+            CBS conflict-based search and SIPP space-time reservation, optimal task–vehicle matching
+            via the Hungarian algorithm, deadlock avoidance via Banker's algorithm, plus order-level
+            combinatorial optimization (GBDT ETA estimation, bin packing, clustering).
+            These algorithms run at scale on heterogeneous fleets (AMRs / four-way shuttles).
+            I'd like to further explore multi-agent reinforcement learning (MARL) under real-world constraints.
+          </p>
+        </article>
+
+        <article class="interest-item">
+          <h3 data-i18n="res.b.title">Digital Twin &amp; Simulation Validation</h3>
+          <p data-i18n="res.b.desc">
+            I built a tick-driven warehouse simulation engine: trapezoidal-velocity kinematics,
+            collision detection and deadlock resolution. It runs as a virtual PLC against the real
+            scheduler for hardware-in-the-loop validation, with fault injection, replay and headless
+            capacity stress tests — so scheduling algorithms are fully verified before they touch a real warehouse.
+          </p>
+        </article>
+
+        <article class="interest-item">
+          <h3 data-i18n="res.c.title">NLP · Affective Computing</h3>
+          <p data-i18n="res.c.desc">
+            The core of my undergraduate research: EmoVecLSTM, an end-to-end emotion-recognition
+            framework that fuses the NVDM neural topic model with LSTM, trained and ablated on DailyDialog.
+            Next I'd like to explore emotion understanding and dialogue modeling in the LLM era.
+          </p>
+        </article>
+
+        <article class="interest-item">
+          <h3 data-i18n="res.d.title">Knowledge Graphs &amp; Information Extraction</h3>
+          <p data-i18n="res.d.desc">
+            Built a COVID biomedical knowledge graph: named entity recognition, rule-based relation
+            extraction, and the full pipeline from literature collection to graph construction.
+            Interested in domain-specific knowledge engineering and KGQA.
+          </p>
+        </article>
+      </div>
+
+      <!-- 如有论文、专利或竞赛成果，按此模板补充：
+      <h3 class="sub-title"><span data-i18n="pub.title">Publications</span></h3>
+      <ul class="pub-list">
+        <li>
+          <span class="pub-title">Paper title</span>
+          <span class="pub-meta">Authors · Venue · Year</span>
+        </li>
+      </ul>
+      -->
+    </section>
+
+    <!-- ========== 3. 项目 ========== -->
     <section class="section" id="projects">
-      <h2 class="section-title">项目 / 作品</h2>
-      <p class="section-desc">挑几个你最想展示的作品，其他可以通过外链跳转。</p>
+      <h2 class="section-title"><span class="symbol">▤</span> <span data-i18n="projects.title">Selected Projects</span></h2>
+      <p class="section-desc" data-i18n="projects.desc">Things I put a lot of heart into and that best represent me, in reverse chronological order.</p>
 
       <div class="project-grid">
         <!-- 项目卡片模板：复制这一块即可新增 -->
         <article class="card">
           <div class="card-header">
-            <h3 class="card-title">项目名称一</h3>
+            <h3 class="card-title" data-i18n="proj1.title">Fleet Scheduling System for Warehouse AMRs (ERMS)</h3>
             <span class="card-year">2026</span>
           </div>
-          <p class="card-desc">
-            项目一句话说明：它是什么、解决了什么问题、你负责了哪部分。
+          <p class="card-desc" data-i18n="proj1.desc">
+            Working on a scheduling platform for large AMR fleets: a multi-robot traffic-control
+            engine (meeting / overtaking / detour / deadlock recovery), a from-scratch GBDT for
+            robot ETA estimation, combinatorial-optimization algorithms such as bin packing and
+            mutual-nearest-neighbor clustering, and an on-robot edge agent bridging ROS with multi-chassis adaptation.
           </p>
           <div class="card-tags">
-            <span class="tag">Python</span>
-            <span class="tag">React</span>
-            <span class="tag">Supabase</span>
-          </div>
-          <div class="card-links">
-            <a href="https://your-demo-link.com" target="_blank" rel="noopener">在线预览 ↗</a>
-            <a href="https://github.com/your-username/repo" target="_blank" rel="noopener">源代码 ↗</a>
+            <span class="tag" data-i18n="proj1.t1">Go Microservices / gRPC</span>
+            <span class="tag">GBDT</span>
+            <span class="tag" data-i18n="proj1.t3">Combinatorial Optimization</span>
+            <span class="tag">ROS</span>
           </div>
         </article>
 
         <article class="card">
           <div class="card-header">
-            <h3 class="card-title">项目名称二</h3>
+            <h3 class="card-title" data-i18n="proj2.title">Multi-Agent Warehouse Scheduler (RCS)</h3>
             <span class="card-year">2025</span>
           </div>
-          <p class="card-desc">
-            这里是第二个项目的描述。可以放你参加过的比赛、做过的课程作业、开源贡献等。
+          <p class="card-desc" data-i18n="proj2.desc">
+            A four-way-shuttle scheduling kernel built from zero: multi-agent path finding with
+            CBS conflict-based search + SIPP space-time reservation, Hungarian-algorithm task–vehicle
+            matching, and Banker's-algorithm deadlock avoidance; supports dozens of shuttles
+            concurrently across multi-level warehouses and shipped to multiple projects.
           </p>
           <div class="card-tags">
-            <span class="tag">TypeScript</span>
-            <span class="tag">Node.js</span>
-          </div>
-          <div class="card-links">
-            <a href="#" target="_blank" rel="noopener">查看详情 ↗</a>
+            <span class="tag">Golang / Kratos</span>
+            <span class="tag">CBS / SIPP</span>
+            <span class="tag" data-i18n="proj2.t3">Hungarian Algorithm</span>
+            <span class="tag" data-i18n="proj2.t4">Banker's Algorithm</span>
           </div>
         </article>
 
         <article class="card">
           <div class="card-header">
-            <h3 class="card-title">项目名称三</h3>
-            <span class="card-year">2025</span>
+            <h3 class="card-title" data-i18n="proj3.title">Digital Twin Simulation Platform</h3>
+            <span class="card-year">2026</span>
           </div>
-          <p class="card-desc">
-            第三个项目的描述。建议按重要性/时间排序，把最想让人看到的放前面。
+          <p class="card-desc" data-i18n="proj3.desc">
+            A digital-twin simulation engine for the scheduler: tick-driven at 20 TPS, with
+            trapezoidal kinematics, collision detection and deadlock resolution. It acts as a
+            virtual PLC for hardware-in-the-loop validation, supports fault injection, replay and
+            headless capacity stress tests, and is guarded by 150+ automated tests.
           </p>
           <div class="card-tags">
-            <span class="tag">Figma</span>
-            <span class="tag">UI Design</span>
+            <span class="tag">Python / FastAPI</span>
+            <span class="tag">PixiJS</span>
+            <span class="tag" data-i18n="proj3.t3">Digital Twin</span>
+            <span class="tag" data-i18n="proj3.t4">Fault Injection</span>
           </div>
-          <div class="card-links">
-            <a href="#" target="_blank" rel="noopener">查看详情 ↗</a>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h3 class="card-title" data-i18n="proj4.title">Emotion Recognition via Conversational Topic Modeling</h3>
+            <span class="card-year">2024</span>
+          </div>
+          <p class="card-desc" data-i18n="proj4.desc">
+            EmoVecLSTM: a framework combining the NVDM neural topic model with LSTM, fusing topic
+            distributions with affective features for end-to-end emotion recognition;
+            trained and evaluated on DailyDialog.
+          </p>
+          <div class="card-tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">NVDM</span>
+            <span class="tag">LSTM</span>
+            <span class="tag">NLP</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h3 class="card-title" data-i18n="proj5.title">Generative Machine Translation &amp; Dialogue</h3>
+            <span class="card-year">2023</span>
+          </div>
+          <p class="card-desc" data-i18n="proj5.desc">
+            Implemented Transformer and Seq2Seq models in PyTorch, trained on English–French
+            parallel corpora and the Cornell Movie Dialogs Corpus, for end-to-end translation
+            and human–machine dialogue.
+          </p>
+          <div class="card-tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">Transformer</span>
+            <span class="tag">Seq2Seq</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <h3 class="card-title" data-i18n="proj6.title">COVID Biomedical Knowledge Graph</h3>
+            <span class="card-year">2023</span>
+          </div>
+          <p class="card-desc" data-i18n="proj6.desc">
+            Named entity recognition with BioSpaCy and rule-based relation extraction, covering
+            the full pipeline from literature crawling to a lightweight knowledge graph;
+            owned the crawler, information extraction and graph construction.
+          </p>
+          <div class="card-tags">
+            <span class="tag">BioSpaCy</span>
+            <span class="tag" data-i18n="proj6.t2">Knowledge Graph</span>
+            <span class="tag" data-i18n="proj6.t3">Crawler</span>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- ========== 3. 博客文章 ========== -->
-    <section class="section" id="blog">
-      <h2 class="section-title">博客</h2>
-      <p class="section-desc">记录学习笔记、技术思考、生活随笔。<a href="blog/index.html">查看全部 →</a></p>
+    <!-- ========== 4. 工具箱 ========== -->
+    <section class="section" id="toolbox">
+      <h2 class="section-title"><span class="symbol">▦</span> <span data-i18n="toolbox.title">Toolbox</span></h2>
+      <p class="section-desc" data-i18n="toolbox.desc">What I actually use day to day — not resume keywords.</p>
 
-      <ul class="post-list">
-        <!-- 文章条目模板：复制这一行即可新增 -->
-        <li class="post-item">
-          <a href="blog/hello-world.html">
-            <span class="post-date">2026-10-12</span>
-            <span class="post-title">你好，世界 · 我的第一篇博客</span>
-          </a>
-        </li>
-        <li class="post-item">
-          <a href="#">
-            <span class="post-date">2026-10-01</span>
-            <span class="post-title">示例文章标题（点击后跳转到 blog/xxx.html）</span>
-          </a>
-        </li>
-        <li class="post-item">
-          <a href="#">
-            <span class="post-date">2026-09-20</span>
-            <span class="post-title">另一篇示例文章标题</span>
-          </a>
-        </li>
-      </ul>
+      <div class="toolbox">
+        <div class="tb-row">
+          <span class="tb-cat" data-i18n="tb.cat1">Most-used</span>
+          <div class="tb-tags">
+            <span class="tag">Golang</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+        <div class="tb-row">
+          <span class="tb-cat" data-i18n="tb.cat2">Algorithms</span>
+          <div class="tb-tags">
+            <span class="tag" data-i18n="tb.a1">MAPF (CBS / SIPP)</span>
+            <span class="tag" data-i18n="tb.a2">Hungarian Algorithm</span>
+            <span class="tag" data-i18n="tb.a3">Banker's Algorithm</span>
+            <span class="tag">GBDT</span>
+            <span class="tag" data-i18n="tb.a5">Bin Packing / Clustering</span>
+            <span class="tag">Transformer / LSTM</span>
+            <span class="tag">PyTorch</span>
+          </div>
+        </div>
+        <div class="tb-row">
+          <span class="tb-cat" data-i18n="tb.cat3">Engineering</span>
+          <div class="tb-tags">
+            <span class="tag" data-i18n="tb.e1">Kratos Microservices</span>
+            <span class="tag">gRPC / Protobuf</span>
+            <span class="tag">Kafka / Redis</span>
+            <span class="tag">Modbus / MQTT</span>
+            <span class="tag">ROS</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Linux</span>
+          </div>
+        </div>
+        <div class="tb-row">
+          <span class="tb-cat" data-i18n="tb.cat4">Languages</span>
+          <div class="tb-tags">
+            <span class="tag" data-i18n="tb.l1">Chinese · native</span>
+            <span class="tag" data-i18n="tb.l2">English · CET-6, at ease with papers &amp; docs</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- ========== 4. 简历 / 经历时间线 ========== -->
+    <!-- ========== 5. 经历时间线 ========== -->
     <section class="section" id="timeline">
-      <h2 class="section-title">经历</h2>
+      <h2 class="section-title"><span class="symbol">▱</span> <span data-i18n="timeline.title">Experience</span></h2>
 
       <ol class="timeline">
         <!-- 时间线条目模板 -->
@@ -146,12 +319,14 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-header">
-              <h3>公司名 / 学校名</h3>
-              <span class="timeline-period">2024.07 - 至今</span>
+              <h3 data-i18n="tl1.org">ForwardX Robotics</h3>
+              <span class="timeline-period" data-i18n="tl1.period">2026.03 – Present</span>
             </div>
-            <p class="timeline-role">职位 / 专业 · 例如「算法工程师」或「人工智能 本科」</p>
-            <p class="timeline-desc">
-              在这里写一到两句你在这个阶段做了什么、学到了什么、有哪些代表性成果。
+            <p class="timeline-role" data-i18n="tl1.role">Algorithm &amp; Golang Engineer</p>
+            <p class="timeline-desc" data-i18n="tl1.desc">
+              Working on the fleet scheduling system for warehouse-logistics AMRs: traffic control,
+              task scheduling and order-optimization algorithms, plus the on-robot edge agent
+              and multi-chassis adaptation.
             </p>
           </div>
         </li>
@@ -160,35 +335,100 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-header">
-              <h3>XX 大学</h3>
+              <h3 data-i18n="tl2.org">Suzhou Aotelai Logistics Technology Co., Ltd.</h3>
+              <span class="timeline-period">2025.02 - 2026.02</span>
+            </div>
+            <p class="timeline-role" data-i18n="tl2.role">Algorithm / Software Engineer · Software Center</p>
+            <p class="timeline-desc" data-i18n="tl2.desc">
+              Built an in-house multi-agent warehouse scheduler (RCS) from zero: a highly compatible
+              scheduling kernel supporting our own and mainstream four-way shuttles, with CBS/SIPP
+              path finding and Hungarian matching at its core; integrated WMS/WCS into a reusable,
+              configurable standardized product that accelerated delivery.
+            </p>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 data-i18n="tl3.org">Suzhou Mocang Robotics Co. (MagicStore)</h3>
+              <span class="timeline-period">2024.07 - 2024.11</span>
+            </div>
+            <p class="timeline-role" data-i18n="tl3.role">Golang Engineer · Software Dept.</p>
+            <p class="timeline-desc" data-i18n="tl3.desc">
+              Designed and implemented a concurrent multi-shuttle scheduling system on the Kratos
+              microservice framework; developed core modules for communication, path planning and
+              task queues; introduced task pre-allocation and dynamic load balancing, cutting empty
+              runs and task waiting time.
+            </p>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 data-i18n="tl4.org">Soochow University</h3>
               <span class="timeline-period">2020.09 - 2024.06</span>
             </div>
-            <p class="timeline-role">本科 · 人工智能</p>
-            <p class="timeline-desc">
-              主修课程 / 参与项目 / 获奖情况的简要说明。
+            <p class="timeline-role" data-i18n="tl4.role">B.Eng. in Artificial Intelligence · School of Computer Science &amp; Technology (211 / Double First-Class)</p>
+            <p class="timeline-desc" data-i18n="tl4.desc">
+              GPA 3.2/4.0 (NLP 3.9, Deep Learning 3.8, etc.); served as President of the Student
+              Union of the School of CS and head of the Sports Department.
             </p>
-          </div>
-        </li>
-
-        <li class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>更早的经历</h3>
-              <span class="timeline-period">20XX - 20XX</span>
-            </div>
-            <p class="timeline-role">角色 / 身份</p>
-            <p class="timeline-desc">简要说明。</p>
           </div>
         </li>
       </ol>
+    </section>
+
+    <!-- ========== 6. 荣誉奖项 ========== -->
+    <section class="section" id="awards">
+      <h2 class="section-title"><span class="symbol">◈</span> <span data-i18n="awards.title">Selected Honors</span></h2>
+      <p class="section-desc" data-i18n="awards.desc">Some competitions and campus honors along the way.</p>
+
+      <ul class="award-list">
+        <!-- 奖项条目模板：复制这一行即可新增 -->
+        <li class="award-item">
+          <span class="award-name" data-i18n="aw1.name">Mathematical Contest in Modeling (MCM/ICM) · Meritorious Winner</span>
+          <span class="award-meta" data-i18n="aw1.meta">International · 2023</span>
+        </li>
+        <li class="award-item">
+          <span class="award-name" data-i18n="aw2.name">Lanqiao Cup Programming Contest · Jiangsu, Group A · Third Prize</span>
+          <span class="award-meta" data-i18n="aw2.meta">Provincial · 2023</span>
+        </li>
+        <li class="award-item">
+          <span class="award-name" data-i18n="aw3.name">China College Students' "Internet+" Innovation &amp; Entrepreneurship Competition · Campus Third Prize</span>
+          <span class="award-meta" data-i18n="aw3.meta">Campus · 2022</span>
+        </li>
+        <li class="award-item">
+          <span class="award-name" data-i18n="aw4.name">National English Competition for College Students · Third Prize</span>
+          <span class="award-meta" data-i18n="aw4.meta">National · 2022</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ========== 7. 博客文章 ========== -->
+    <section class="section" id="blog">
+      <h2 class="section-title"><span class="symbol">❖</span> <span data-i18n="blog.title">Blog</span></h2>
+      <p class="section-desc" data-i18n="blog.desc">Study notes, technical thoughts, occasionally life. <a href="blog/index.html">View all →</a></p>
+
+      <ul class="post-list">
+        <!-- 文章条目模板：复制这一行即可新增 -->
+        <li class="post-item">
+          <a href="blog/hello-world.html">
+            <span class="post-date">2026-10-12</span>
+            <span class="post-title" data-i18n="blog.post1">Hello, World · My First Post</span>
+          </a>
+        </li>
+      </ul>
     </section>
 
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>© <span id="year">2026</span> 你的名字 · 由 <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> 托管</p>
+      <p>© <span id="year">2026</span> <span data-i18n="footer.name">Zhang Yu</span> · <span data-i18n="footer.hosted">Hosted on</span> <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
     </div>
   </footer>
 

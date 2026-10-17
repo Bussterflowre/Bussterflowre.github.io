@@ -5,6 +5,9 @@ Thumbs.db
 .vscode/
 *.swp
 
+# AI 助手本地数据
+.codebuddy/
+
 # Node（如果后面加了构建工具）
 node_modules/
 dist/

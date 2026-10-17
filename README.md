@@ -12,7 +12,7 @@
 ├── assets/
 │   ├── avatar.svg          头像占位图，替换成你自己的即可
 │   ├── favicon.svg         浏览器标签页图标
-│   └── resume.pdf          （可选）放你的简历 PDF
+│   └── resume.pdf          （可选）如需公开简历可再放回，注意其中的隐私信息
 ├── blog/
 │   ├── index.html          博客列表页
 │   └── hello-world.html    示例文章 / 文章模板
@@ -35,9 +35,9 @@ python -m http.server 8000
 **关键**：仓库名必须是 `<用户名>.github.io`，才能得到 `https://<用户名>.github.io/` 这个专属地址。
 你已有的其他仓库都不影响，这只是新增的一个仓库。
 
-假设你的 GitHub 用户名是 `zhangsan`：
+假设你的 GitHub 用户名是 `Bussterflowre`：
 
-1. 在 GitHub 上新建仓库，名字填 `zhangsan.github.io`（**Public**，私有仓库免费账户不支持 Pages）
+1. 在 GitHub 上新建仓库，名字填 `Bussterflowre.github.io`（**Public**，私有仓库免费账户不支持 Pages）
 2. 在本地初始化并推送：
 
    ```bash
@@ -46,14 +46,14 @@ python -m http.server 8000
    git add .
    git commit -m "init: personal homepage"
    git branch -M main
-   git remote add origin https://github.com/zhangsan/zhangsan.github.io.git
+   git remote add origin https://github.com/Bussterflowre/Bussterflowre.github.io.git
    git push -u origin main
    ```
 
 3. 打开仓库页面 → **Settings** → 左侧 **Pages**
 4. **Source** 选 `Deploy from a branch`
 5. **Branch** 选 `main` / `/ (root)`，点 **Save**
-6. 等 1-2 分钟，就能通过 `https://zhangsan.github.io/` 访问
+6. 等 1-2 分钟，就能通过 `https://Bussterflowre.github.io/` 访问
 
 之后每次修改，`git add . && git commit -m "update" && git push`，1 分钟左右自动生效。
 
